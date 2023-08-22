@@ -12,7 +12,8 @@ class TravelController extends Controller
      */
     public function index()
     {
-        //
+        $destinos = Travel::all();
+        return view('destinations.index', compact('destinos'));
     }
 
     /**
@@ -28,7 +29,7 @@ class TravelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
