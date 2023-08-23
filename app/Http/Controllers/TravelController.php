@@ -29,7 +29,7 @@ class TravelController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**
@@ -37,7 +37,7 @@ class TravelController extends Controller
      */
     public function show(Travel $travel)
     {
-        //
+        return view('destinations.show', compact('travel'));
     }
 
     /**
