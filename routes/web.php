@@ -15,3 +15,6 @@ use App\Http\Controllers\TravelController;
 */
 
 Route::get('/', [TravelController::class, 'index'])->name('home');
+Route::get('/destinations/{travel}', [TravelController::class, 'show'])->name('destinations.show');
+
+Auth::routes();
