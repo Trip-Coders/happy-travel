@@ -18,5 +18,3 @@ Route::get('/', [TravelController::class, 'index'])->name('home');
 Route::get('/destinations/{travel}', [TravelController::class, 'show'])->name('destinations.show');
 
 Auth::routes();
-
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
