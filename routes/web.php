@@ -15,3 +15,7 @@ use App\Http\Controllers\TravelController;
 */
 
 Route::get('/', [TravelController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
