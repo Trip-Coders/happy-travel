@@ -17,4 +17,8 @@ use App\Http\Controllers\TravelController;
 Route::get('/', [TravelController::class, 'index'])->name('home');
 Route::get('/destinations/{travel}', [TravelController::class, 'show'])->name('destinations.show');
 
+
+Route::get('/destinations/{travel}/edit', [TravelController::class, 'edit'])->name('destinations.edit');
+Route::patch('/destinations/{travel}', [TravelController::class, 'update'])->name('destinations.update');
+Route::delete('/destinations/{travel}', [TravelController::class, 'destroy'])->name('destinations.destroy');
 Auth::routes();
