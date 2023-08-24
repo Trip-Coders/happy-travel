@@ -2,9 +2,10 @@
 
 @section('content')
     <h1>Search Results</h1>
-    <form action="{{ route('search.index') }}" method="GET">
+    <form action="{{ route('search.busqueda') }}" method="POST">
         <input type="text" name="query" value="{{ request('query') }}">
         <button type="submit">Buscar</button>
+        @csrf
     </form>
 
     <ul>

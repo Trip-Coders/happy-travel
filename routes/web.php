@@ -19,7 +19,8 @@ use App\Http\Controllers\SearchController;
 
 Route::get('/', [TravelController::class, 'index'])->name('home');
 Route::get('/destinations/{travel}', [TravelController::class, 'show'])->name('destinations.show');
-Route::get('/search', 'SearchController@index')->name('search.index');
+Route::get('/search', [SearchController::class, 'busqueda'])->name('search.busqueda');
+
 
 Auth::routes();
 

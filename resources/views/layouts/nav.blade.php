@@ -14,7 +14,7 @@
             <a href="/">
                 <img src="{{ asset('images/Logo.svg') }}" alt="Logo">
             </a>
-            <form action="{{ route('search.index') }}" method="GET">
+            <form action="{{ route('search.busqueda') }}" method="GET">
             <input type="text" name="query" value="{{ request('query') }}">
             <button type="submit">Search</button>
             </form>
