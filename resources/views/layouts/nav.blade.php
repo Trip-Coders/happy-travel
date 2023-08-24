@@ -16,7 +16,12 @@
             </a>
             <a href="{{ route('home') }}"><img src="{{ asset('images/Home-icon.svg') }}" alt="Home"></a>
             <a href="{{ route('register') }}"><img src="{{ asset('images/Avatar-icon.svg') }}" alt="Registro"></a>
-   
+            @if(Auth::check()) <!-- Verifica si el usuario está autenticado -->
+            <ul class="desktop-icons">
+                <li><a href="{{ route('destinations.create') }}"><img src="{{ asset('images/Create-icon.svg') }}" alt="Crear"></a></li>
+                <li><a href="javascript:history.back()"><img src="{{ asset('images/Logout-icon.svg') }}" alt="Volver"></a></li>
+            </ul>
+            @endif
             </ul>
         </nav>
     </header>
