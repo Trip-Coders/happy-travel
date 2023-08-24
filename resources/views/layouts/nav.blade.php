@@ -18,8 +18,8 @@
                 <img src="{{ asset('images/Logo.svg') }}" alt="Logo">
             </a>
             <form action="{{ route('search.busqueda') }}" method="GET">
-            <input type="text" name="query" value="{{ request('query') }}">
-            <button type="submit">Search</button>
+            <input type="text" name="busqueda" value="{{ request('busqueda') }}">
+            <button type="submit">Buscar</button>
             </form>
             <a href="{{ route('home') }}"><img src="{{ asset('images/Home-icon.svg') }}" alt="Home"></a>
             <a href="{{ route('register') }}"><img src="{{ asset('images/Avatar-icon.svg') }}" alt="Registro"></a>
