@@ -3,9 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TravelController;
 use App\Http\Controllers\SearchController;
-
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,18 +17,7 @@ use App\Http\Controllers\SearchController;
 Route::get('/', [TravelController::class, 'index'])->name('home');
 Route::get('/destinations/{travel}', [TravelController::class, 'show'])->name('destinations.show');
 Route::get('/search', [SearchController::class, 'busqueda'])->name('search.busqueda');
-
-
+/////
 Auth::routes();
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
