@@ -23,6 +23,7 @@
             </form>
             <a href="{{ route('home') }}"><img src="{{ asset('images/Home-icon.svg') }}" alt="Home"></a>
             <a href="{{ route('register') }}"><img src="{{ asset('images/Avatar-icon.svg') }}" alt="Registro"></a>
+            <a href="{{ route('logout') }}"><img src="{{ asset('images/Avatar-icon.svg') }}" alt="Logout"></a>
             </ul>
         </nav>
     </header>
