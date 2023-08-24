@@ -1,0 +1,47 @@
+h4{
+    margin-left: 40%;
+    font: rgba(255, 0, 96, 1);
+}
+
+
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.title-shadow {
+    box-shadow: inset 1px 5px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.location-shadow {
+    box-shadow: inset 1px 5px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.rounded-start-modif {
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 1rem!important;
+    border-bottom-left-radius: 1rem!important;
+}
+.rounded-end-modif {
+    border-top-right-radius: 1rem!important;
+    border-bottom-right-radius: 1rem!important;
+    box-shadow: inset 1px 5px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.rounded-box {
+    border-radius: 1rem!important;
+}
+#btn-accept {
+    background: rgba(0, 223, 162,1);
+    border: none;
+    font-weight: bold;
+    color: white;
+    width: 7rem;
+}
+#btn-cancel {
+    background:rgba(255, 0, 96, 1);
+    border: none;
+    font-weight: bold;
+    color: white;
+    width: 7rem;
+}
