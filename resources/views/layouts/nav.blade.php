@@ -11,30 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Changa+One&family=Jaldi&family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-            <a href="/">
-                <img src="{{ asset('images/Logo.svg') }}" alt="Logo">
-            </a>
-            <form action="{{ route('search.busqueda') }}" method="GET">
-            <input type="text" name="query" value="{{ request('query') }}">
-            <button type="submit">Search</button>
-            </form>
-            <a href="{{ route('home') }}"><img src="{{ asset('images/Home-icon.svg') }}" alt="Home"></a>
-            <a href="{{ route('register') }}"><img src="{{ asset('images/Avatar-icon.svg') }}" alt="Registro"></a>
-            @if(Auth::check()) <!-- Verifica si el usuario está autenticado -->
-            <ul class="desktop-icons">
-                <li><a href="{{ route('destinations.create') }}"><img src="{{ asset('images/Create-icon.svg') }}" alt="Crear"></a></li>
-                <li><a href="javascript:history.back()"><img src="{{ asset('images/Logout-icon.svg') }}" alt="Volver"></a></li>
-            </ul>
-            @endif
+    <header>     
         <nav class="border-info">
             <ul class="nav-list">
-                <li class="logo"><a href="/"><img src="{{ asset('images/Logo.svg') }}" alt="Logo"></a></li>
+                <li class="logo"><a href="/"><img src="{{ asset('images/Logo.svg') }}" alt="Logo"></a></li>   
+                <form action="{{ route('search.busqueda') }}" method="GET" class="search-form">
+                    <div class="search-input-container">
+                        <input type="text" name="busqueda" value="{{ request('busqueda') }}" class="search-input">
+                        <button type="submit" class="search-button">
+                            <img src="{{ asset('images/Glass-icon.svg') }}" alt="Search Icon">
+                        </button>
+                    </div>
+                </form>
                 <li><a href="{{ route('home') }}"><img src="{{ asset('images/Home-icon.svg') }}" alt="Home"></a></li>
+                @if(Auth::check())           
+                <li><a href="{{ route('destinations.create') }}"><img src="{{ asset('images/Create-icon.svg') }}" alt="Crear"></a></li>
+                <li>
+                <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <img src="{{ asset('images/Logout-icon.svg') }}" alt="Volver">
+                </a>
+                </li>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+                @endif
                 @guest
-                <li><a href="{{ route('register') }}"><img src="{{ asset('images/Avatar-icon.svg') }}" alt="Registro"></a></li>
+                <li><a href="{{ route('register') }}"><img src="{{ asset('images/Avatar-icon.svg') }}" alt="Registro"></a></li>               
                 @endguest
             </ul>
         </nav>
@@ -66,12 +68,7 @@
 
         @yield('content') 
     </main>
-    <footer>
-        <!-- Pie de página común (enlaces, créditos, etc.) -->
-    </footer>
-        @yield('scripts')
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
+    
     <script>
     document.addEventListener("DOMContentLoaded", function () {
         const deleteButtons = document.querySelectorAll(".delete-destination");

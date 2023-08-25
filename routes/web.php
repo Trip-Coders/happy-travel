@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TravelController;
 use App\Http\Controllers\SearchController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 
 
 /*
@@ -27,6 +30,11 @@ Route::get('/destinations/{travel}/edit', [TravelController::class, 'edit'])->na
 Route::patch('/destinations/{travel}', [TravelController::class, 'update'])->name('destinations.update');
 Route::delete('/destinations/{travel}', [TravelController::class, 'destroy'])->name('destinations.destroy');
 
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
 Auth::routes();
+
 
 

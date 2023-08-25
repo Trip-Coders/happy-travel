@@ -11,8 +11,10 @@ class SearchController extends Controller
     {
         $search = $request->input('busqueda'); 
         if (!empty($search)) {
-            $result = Travel::where('title', 'LIKE', "%$search%")
+            $result = Travel::where('image', 'LIKE', "%$search%")
+                            ->orWhere('title', 'LIKE', "%$search%")
                             ->orWhere('location', 'LIKE', "%$search%")
+                            ->orWhere('content', 'LIKE', "%$search%")
                             ->get();
         } else {
             $result = collect();
