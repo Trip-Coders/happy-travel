@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="d-flex justify-content-center align-items-center" style="margin-right: -10rem;">
-                <img class="rounded-4" src="{{ asset($travel->image) }}" alt="{{ $travel->title }}" width="400" height="400">
+                <img class="rounded-4" src="{{ asset('storage/' . $travel->image) }}" alt="{{ $travel->title }}" width="400" height="400">
 
             </div>
         </div>

@@ -14,7 +14,7 @@
     @foreach($destinos as $destino)
         <div class="destination-card">
             <div class="position-relative">
-                <img src="{{ asset($destino->image) }}" alt="Destino" class="destination-image">
+                <img src="{{ asset('storage/' . $destino->image) }}" alt="Destino" class="destination-image">
                 @auth
                 <a href="{{ route('destinations.show', $destino) }}" class="position-absolute top-0 end-0 mt-3 me-3">
                     <img src="{{ asset('images/Info-icon.svg') }}" alt="info-icono">
