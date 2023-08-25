@@ -10,17 +10,14 @@ class SearchController extends Controller
 {
     public function busqueda(Request $request)
     {
-        if ($request->isMethod('post')) {
-            $query = $request->input('query');
-            $results = Post::where('title', 'like', "%$query%")
-                            ->orWhere('content', 'like', "%$query%")
-                            ->get();
-        
-            return view('search.busqueda', compact('search.busqueda'));
+        $busqueda = $request->input('search');
+        if (!empty($busqueda)) {
+            $destinos = Travel::where('title', 'LIKE', "%$busqueda%")
+                               ->orWhere('location', 'LIKE', "%$busqueda%")
+                               ->get();
         } else {
-            $query = $request->input('query');
-            return redirect()->route('search.busqueda', ['query' => $query]);
+            $result = collect(); // Si el término de búsqueda es vacío, muestra una colección vacía
         }
+        return view('search.busqueda', compact('result', 'busqueda'));
     }
-    
 }

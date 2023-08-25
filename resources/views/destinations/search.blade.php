@@ -9,8 +9,8 @@
     </form>
 
     <ul>
-        @foreach ($results as $result)
-            <li>{{ $result->title }}</li>
+        @foreach ($results as $resultItem)
+            <li>{{ $resultItem->title }}</li>
         @endforeach
     </ul>
 @endsection
