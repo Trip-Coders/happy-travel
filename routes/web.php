@@ -26,6 +26,7 @@ Route::post('/destinations', [TravelController::class, 'store']);
 Route::get('/destinations/{travel}/edit', [TravelController::class, 'edit'])->name('destinations.edit');
 Route::patch('/destinations/{travel}', [TravelController::class, 'update'])->name('destinations.update');
 Route::delete('/destinations/{travel}', [TravelController::class, 'destroy'])->name('destinations.destroy');
+
 Auth::routes();
 
 

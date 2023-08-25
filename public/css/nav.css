@@ -1,0 +1,18 @@
+body{
+    margin-left:30px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.nav-list li a {
+    margin-right: 20px;
+}

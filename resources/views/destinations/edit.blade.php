@@ -19,15 +19,15 @@
             @method('PATCH')
             <div>
                     <div class="mb-3">
-                        <label for="title" class="form-label text-primary ">Título:</label>
+                        <label for="title" class="form-label text-primary ">Título</label>
                         <input type="text" id="title" name="title" value="{{ $travel->title }}" class="form-control rounded-pill title-shadow" placeholder="Escribe el nombre del lugar" required>
                     </div>
                     <div class="mb-3">
-                        <label for="location" class="form-label text-primary">Ubicación:</label>
+                        <label for="location" class="form-label text-primary">Ubicación</label>
                         <input type="text" id="location" name="location" value="{{ $travel->location }}" class="form-control rounded-pill location-shadow" placeholder="Escribe la ubicación" required>
                     </div>
                     <div class="mb-3">
-                        <label  for="image" class="form-label text-primary">Imagen:</label>
+                        <label  for="image" class="form-label text-primary">Imagen</label>
                         <div class="input-group mb-3">
                             <label class="input-group-text bg-primary rounded-start-modif" for="image">
                                 <img src="{{ asset('images/File-icon.svg') }}" alt="File Icon">
@@ -44,8 +44,8 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="content" class="form-label text-primary">¿Por qué quieres viajar allí?:</label>
-                    <textarea name="content" class="form-control rounded-box reason-shadow" rows="4" placeholder="Escribe tus razones aquí" required></textarea>
+                    <label for="content me-3" class="form-label text-primary">¿Por qué quieres viajar allí?</label>
+                    <textarea name="content" class="form-control rounded-box content-shadow ms-4" rows="10" placeholder="Escribe tus razones aquí" required>{{$travel->content}}</textarea>
                 </div>
             </div>
         </form>
