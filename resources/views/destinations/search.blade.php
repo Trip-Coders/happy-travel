@@ -4,6 +4,7 @@
     <h1>Resultado de la busqueda</h1>
     <ul>
         @foreach ($result as $results)
+            <li>{{ $results->image }}</li>
             <li>{{ $results->title }}</li>
             <li>{{ $results->location }}</li>
         @endforeach
