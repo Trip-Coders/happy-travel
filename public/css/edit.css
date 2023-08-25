@@ -4,6 +4,9 @@ h4{
 }
 
 
+.mb3{
+    display: inline;
+}
 
 .form-container {
     display: flex;
