@@ -13,6 +13,8 @@
 
 # <h2> Atomic Design</h2>
 <img width="341" alt="Happy Travel Atomic Design" src="https://github.com/Trip-Coders/happy-travel/assets/132339878/92f13bc6-80ea-4af9-9994-c5da152f50e6">
+
+# <h2> Desktop Desing </h2>
 <img width="659" alt="Happy Travel Desktop Design" src="https://github.com/Trip-Coders/happy-travel/assets/132339878/7af8369f-ae05-4525-9a8f-eda08c2aef0c">
 <img width="659" alt="Happy Travel Descktop 2" src="https://github.com/Trip-Coders/happy-travel/assets/132339878/8394611d-9bb5-4236-9fea-0bab0bd16ef0">
 <img width="449" alt="Happy Travel Desktop 3" src="https://github.com/Trip-Coders/happy-travel/assets/132339878/753a5bd7-b322-486a-a625-c068018d2e84">
