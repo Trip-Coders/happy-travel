@@ -12,8 +12,6 @@
 
 ## Mokups
 
-<https://www.figma.com/file/twPJOzEo5hZJZ7srsEt10y/HappyTravel?type=design&node-id=0-1&mode=design/>
-
 # <h2> Atomic Design</h2>
 <img width="341" alt="Happy Travel Atomic Design" src="https://github.com/Trip-Coders/happy-travel/assets/132339878/92f13bc6-80ea-4af9-9994-c5da152f50e6">
 
@@ -55,7 +53,7 @@
 
 ## Installation
 ***
-1. Clone this repository:
+  Clone this repository:
 - https://github.com/Trip-Coders/happy-travel.git
 - Place the project folder into the projects directory of your XAMPP installation
 - Set up the database.
