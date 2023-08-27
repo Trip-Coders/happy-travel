@@ -1,6 +1,7 @@
-<p align="center">
+
+<div align="center">
   <h1> Happy Travel</h1>
-</p>
+</div>
 
 ## Team: 
 ![image](https://github.com/Trip-Coders/happy-travel/assets/132339878/67635db6-78bc-4b93-89a1-0ff5952be06a)
