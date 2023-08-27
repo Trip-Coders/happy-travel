@@ -4,7 +4,7 @@
 
 # Happy Travel
 ***
-Happy Travel is a website that shows a wide selection of the dream travel destinations of its registered users, whose aim is to provide through the image, data and description of the published sites, that people accessing the page can decide one or more travel destinations.
+"Happy Travel" is a project by Bootstrap FemCoders where we have been asked to develop a web application, so that people can share the destinations they would love to visit and their reasons for doing so. The goal is for non-authenticated users to be able to view all the dream destinations of other users, and at the same time, an authenticated user can create, edit, and delete their own travel dreams.
 
 ## Technologies
 ***
