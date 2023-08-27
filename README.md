@@ -5,7 +5,7 @@
 ***
 
 ## <h1>General Information</h1>
-"Happy Travel" is a project by Bootcamp FemCoders where we have been asked to develop a web application, so that people can share the destinations they would love to visit and their reasons for doing so. The goal is for non-authenticated users to be able to view all the dream destinations of other users, and at the same time, an authenticated user can create, edit, and delete their own travel dreams
+"Happy Travel" is a project by Bootcamp FemCoders where we have been asked to develop a web application, so that people can share the destinations they would love to visit and their reasons for doing so. The goal is for non-authenticated users to be able to view all the dream destinations of other users, and at the same time, an authenticated user can create, edit, and delete their own travel dreams.
 
 ## Mokups
 
