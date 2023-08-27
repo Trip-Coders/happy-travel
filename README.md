@@ -1,4 +1,6 @@
-<h1> Project: Happy Travel </h1>
+<p align="center">
+  <h1> Happy Travel</h1>
+</p>
 
 ## Team: 
 ![image](https://github.com/Trip-Coders/happy-travel/assets/132339878/67635db6-78bc-4b93-89a1-0ff5952be06a)
