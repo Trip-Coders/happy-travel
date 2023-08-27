@@ -1,8 +1,9 @@
+# Project : <h1> Happy Travel <h1/>
+
+
 ## Team: 
+
 ![image](https://github.com/Trip-Coders/happy-travel/assets/132339878/67635db6-78bc-4b93-89a1-0ff5952be06a)
-
-
-# Happy Travel
 ***
 <h1>General Information</h1>
 "Happy Travel" is a project by Bootstrap FemCoders where we have been asked to develop a web application, so that people can share the destinations they would love to visit and their reasons for doing so. The goal is for non-authenticated users to be able to view all the dream destinations of other users, and at the same time, an authenticated user can create, edit, and delete their own travel dreams.
