@@ -56,10 +56,8 @@
 3.- Set up the database.
 4.- Open the project in your code editor.
   - Inside the "laravel" folder,
-  - Open a terminal and run **"composer install"
-  - 
-  - 
-  - 
+  - Open a terminal and run **"composer install"**
+  - Fpr view the project in your browser, execute the command: php artisan serve
 ## Developers
 ***
 - [Jacinemi Urquiola Alvarez](https://github.com/JacinemiUA) Developer - Scrum Master
