@@ -57,12 +57,13 @@
 ***
 1. Clone this repository:
 - https://github.com/Trip-Coders/happy-travel.git
-2.- <p>Place the project folder into the projects directory of your XAMPP installation </p>
-3.- Set up the database.
-4.- Open the project in your code editor.
-  - Inside the "laravel" folder,
-  - Open a terminal and run **"composer install"**
-  - Fpr view the project in your browser, execute the command: php artisan serve
+- Place the project folder into the projects directory of your XAMPP installation
+- Set up the database.
+- Open the project in your code editor.
+- Inside the "laravel" folder,
+- Open a terminal and run **"composer install"**
+- for view the project in your browser, execute the command: php artisan serve
+  
 ## Developers
 ***
 - [Jacinemi Urquiola Alvarez](https://github.com/JacinemiUA) Developer - Scrum Master
