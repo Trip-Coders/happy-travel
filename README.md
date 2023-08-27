@@ -1,5 +1,5 @@
 ## Team: Trip Coders
-<![image](https://github.com/Trip-Coders/happy-travel/assets/132339878/67635db6-78bc-4b93-89a1-0ff5952be06a)/>
+![image](https://github.com/Trip-Coders/happy-travel/assets/132339878/67635db6-78bc-4b93-89a1-0ff5952be06a)
 
 
 # Happy Travel
