@@ -21,7 +21,7 @@
 <img width="449" alt="Happy Travel Desktop 3" src="https://github.com/Trip-Coders/happy-travel/assets/132339878/753a5bd7-b322-486a-a625-c068018d2e84">
 
 
-## Technologies
+## <h1>Technologies</h1>
 ***
 <div>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
@@ -33,7 +33,7 @@
 
 </div>
 
-## Tools
+## <h1>Tools</h1>
 ***
 <div>
 
@@ -51,7 +51,7 @@
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS): versión css3
 - [Visual Studio Code](https://code.visualstudio.com/): Version 1.79.
 
-## Installation
+## <h1>Installation</h1>
 ***
   
 - Clone this repository: https://github.com/Trip-Coders/happy-travel.git
@@ -62,7 +62,7 @@
 - Open a terminal and run **"composer install"**
 - for view the project in your browser, execute the command: **php artisan serve**
   
-## Developers
+## <h1>Developers</h1>
 ***
 - [Jacinemi Urquiola Alvarez](https://github.com/JacinemiUA) Developer - Scrum Master
 - [Rafaela Silveira](https://github.com/todaunabossa) Developer - Product Owner
